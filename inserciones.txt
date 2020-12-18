@@ -1,0 +1,67 @@
+insersion de datos
+
+
+INSERT INTO cliente(cedula_cliente, nombre, telefonos, nacionalidad, correo) VALUES
+
+(127,'David Burbano',985473647,'chile','david@gmail.com'),
+(123,'cindy',985473647,'chile','cindy@gmail.com'),
+(1315661767,'armando paredes icasas',923748594,'chilena', 'armandoparedes95@hotmail.com'),
+(1315661768,'Israel Silva',938475874,'uruguaya','israel@gmail.com'),
+(4746555,'junior macias',98577767,'mexico','juniormacias@gmail.com')
+(1315661769,'Carlos Macias',985473647,'argentina','carlos@gmail.com'),
+(474646,'julio mera',98546767,'argentina','julio_m@gmail.com')
+
+
+
+
+
+INSERT INTO calificacion(id_calificacion, cedula_cliente,num_calificacion,descripcion_calificacion) VALUES
+('42634','127','3', 'buen servicio'),
+('474646','13145736','1', 'me parecio mal servicio'),
+('42363','1315661767','3', 'atencion oportuna'),
+('4746555','1314533636','2', 'me parecio mal servicio'),
+('42645','123','3', 'normal'),
+('42636','1315661768','3', 'atencion rapida y respetuosa')
+
+
+
+
+INSERT INTO estancia(id_estancia, cedula_cliente,id_habitacion,fech_llegada,fech_salida) VALUES
+('446993','123','666666', '23/12/20', '24/12/20),
+('446993','127','33699', '20/12/20', '21/12/20),
+('47464346','13145736','56564', '20/11/20', '20/12/20),
+('3000','1315661767','112233', '06/09/95', '20/12/95),
+('47443','1314533636','956985', '20/11/20', '20/12/20),
+('3001','1315661768','1122334', '06/09/95', '07/09/95),
+('42645','1234764565','3', '20/11/20', '20/12/20),
+('3002','1315661769','117774', '06/09/95', '17/12/95)
+
+
+
+INSERT INTO servicios(id_servicio,id_habitacion, nombre_servicio, descripcion_servicio,precio_servicio) VALUES
+('42633','33699','spa','servicios de masajes corporales', '7000'),
+('42634','1234568','spa','nada', '1000'),
+('42635','1234569','bartender','vesidos de blanco', '6000'),
+('888','666666','spa','servicios de masajes corporales', '1111'),
+('898','3000','spa','servicios de masajes corporales', '1111'),
+('888','3001','spa','servicios de masajes corporales', '1111')
+('42636','1234560','mariachis','sin sombrero', '1000'),
+('42637','1234561','mariachis','con guitarra de rock', '1000')
+
+
+
+INSERT INTO referencia(id_referencia,cedula_cliente, descripcion_referencia, fecha_referencia) VALUES
+('89811','1315661767','buena ubicacion','12/02/3090'),
+('8777','13984756','es mi primo','12/02/3098'),
+('8987','1315661769','mi abuela me refirio el hotel','12/05/3098'),
+('8986','1315661768','vine por mi hermmano','12/02/3097'),
+('8985','13984756','ksdksjdksjdksd','12/02/3095'),
+('89849','13984756','hotel descansa en paz','12/02/3088')
+
+
+INSERT INTO habitacion(id_habitacion,id_tipo, piso,num_habitacion) VALUES
+('4565','345444','3er piso','1111')
+
+
+INSERT INTO t_habitacion(id_tipo,descripcion, precio) VALUES
+('0633','habitacion matrimonial','600')
